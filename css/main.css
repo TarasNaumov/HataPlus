@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1px;
+}
+
+body {
+    font-family: "Arial";
+    font-size: 14rem;
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.retreat {
+    width: 75%;
+}
+
+.header-line {
+    background-color: #1f1f56;
+    padding: 16px 0;
+}
+
+.header-line .menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-line .ico li {
+    margin: 0 10px;
+}
+
+.ico {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-line li {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.header-line li a {
+    text-decoration: none;
+}
+
+.menu a {
+    font-size: 14rem;
+    letter-spacing: 2rem;
+    line-height: 24rem;
+    color: #b1b1d2;
+}
+
+.menu a:hover {
+    color: #fd8300;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts a,
+.sms a {
+    margin-bottom: 12px;
+}
+
+.contacts a,
+.sms a {
+    display: block;
+    font-size: 18rem;
+    line-height: 24rem;
+    color: #25252c;
+    text-decoration: none;
+}
+
+.contacts a {
+    font-weight: bold;
+}
+
+.contacts a:hover,
+.sms a:last-child:hover,
+.sms .email,
+.main-information a,
+.footer-menu a:hover,
+.footer-sms .email {
+    text-decoration: underline;
+}
+
+.sms a:first-child:hover,
+.skype a,
+.button,
+.card h3,
+.card-sale a,
+.footer-menu a,
+.footer-sms a {
+    text-decoration: none;
+}
+
+.button-conteiner {
+    display: flex;
+    align-content: center;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    text-align: center;
+    font-size: 16rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-weight: bold;
+    transition: .5s;
+    padding: 16px 0;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.header-title {
+    display: flex;
+    background-color: #fff;
+    padding: 29px 0;
+}
+
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #000 url("../img/nature.jpg") no-repeat center /cover;
+    padding: 69px 0;
+    margin-bottom: 45px;
+}
+
+.banner>div {
+    text-align: center;
+}
+
+.banner sup {
+    font-size: 20rem;
+}
+
+.banner .offer {
+    font-size: 30rem;
+    letter-spacing: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 11px;
+    color: #fff;
+}
+
+.offer-of-cottages {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #fff;
+    font-family: "Arial";
+    margin-bottom: 17px;
+}
+
+.price {
+    font-size: 40rem;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.prise span {
+    font-size: 24rem;
+}
+
+.flex {
+    max-width: 960px;
+    display: flex;
+    column-gap: 28px;
+    margin: auto;
+}
+
+.main-information {
+    margin-bottom: 25px;
+}
+
+.main-information h1 {
+    font-size: 30rem;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    margin-bottom: 28px;
+}
+
+.main-information p {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666;
+}
+
+.main-information a {
+    display: inline-block;
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+    margin: 28px 0;
+}
+
+hr {
+    border-color: #e4e4ec;
+}
+
+.main-information a:hover {
+    color: #1f1f56;
+}
+
+.popular-projects {
+    margin-bottom: 46px;
+}
+
+.popular-projects>p {
+    margin-bottom: 25px;
+    font-size: 24rem;
+    line-height: 24rem;
+    color: #24242b;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+}
+
+.card-sale {
+    display: flex;
+    column-gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    cursor: url(../img/cursor.cur), pointer;
+}
+
+.card h3 {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #1f1f56;
+    margin: 11px 0;
+}
+
+.card-sale p {
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+}
+
+aside {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    width: 25%;
+}
+
+aside li {
+    list-style: none;
+    background-color: #e4e4ec;
+    border-bottom: #cdcddd 1px solid;
+}
+
+aside li:last-child {
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    border: none;
+}
+
+aside li ul {
+    display: none;
+}
+
+aside ul li ul li a {
+    margin-left: 30px;
+}
+
+aside li:hover ul {
+    display: block;
+}
+
+aside>ul>li:hover {
+    background-color: #fd8300;
+}
+aside>ul>li:hover>a{
+    color: #fff;
+}
+aside>ul>li>a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #666;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+    transition: .5s;
+}
+
+aside li:hover .arrow {
+    transform: rotate(45deg);
+    border-color: #fff;
+}
+
+aside li>ul>li:hover {
+    background-color: #cecedd;
+}
+
+aside a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #25252c;
+    padding: 15px;
+}
+
+.categories-of-projects {
+    font-size: 16rem;
+    line-height: 24rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 16px;
+    background-color: #1f1f56;
+    font-family: "Roboto Slab";
+}
+
+.footer-menu {
+    padding: 35px 0;
+    background-color: #ededf5;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu a {
+    font-size: 14rem;
+    line-height: 26rem;
+    color: #666;
+}
+
+.footer-menu a:hover {
+    color: #f99f41;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+
+.footer-contacts a {
+    font-size: 18rem;
+    line-height: 24rem;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.footer-sms a {
+    font-size: 16rem;
+    line-height: 24rem;
+    color: #25252c;
+}
+
+.bottom-footer {
+    background-color: #dcdce6;
+    padding: 11px 0;
+}
+
+footer p {
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+    text-align: center;
+}
