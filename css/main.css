@@ -76,6 +76,7 @@ body {
     margin-bottom: 12px;
 }
 
+.footer-menu .contacts a,
 .contacts a,
 .sms a {
     display: block;
@@ -339,6 +340,11 @@ aside a {
     font-family: "Roboto Slab";
 }
 
+.ais {
+    display: flex;
+    align-items: start;
+}
+
 .footer-menu {
     padding: 35px 0;
     background-color: #ededf5;
@@ -362,14 +368,6 @@ aside a {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
-}
-
-
-.footer-contacts a {
-    font-size: 18rem;
-    line-height: 24rem;
-    color: #25252c;
-    font-weight: bold;
 }
 
 .footer-sms a {
