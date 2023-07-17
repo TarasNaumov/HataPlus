@@ -36,13 +36,48 @@ body {
     justify-content: flex-start;
 }
 
-.header-line .ico li {
+.header-line .social li {
     margin: 0 10px;
 }
 
-.ico {
+.social {
     display: flex;
     justify-content: flex-end;
+}
+
+.social a {
+    display: inline-block;
+    background-image: url(../img/sprite.png);
+    transition: 0.3s;
+}
+
+.fb {
+    width: 10px;
+    height: 19px;
+}
+
+.fb:hover {
+    background-position: 0 -21px;
+}
+
+.tw {
+    width: 18px;
+    height: 15px;
+    background-position: -11px 0;
+}
+
+.tw:hover {
+    background-position: -11px -21px;
+}
+
+.inst {
+    width: 19px;
+    height: 19px;
+    background-position: -32px 0;
+}
+
+.inst:hover {
+    background-position: -32px -21px;
 }
 
 .header-line li {
