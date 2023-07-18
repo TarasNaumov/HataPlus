@@ -116,7 +116,8 @@ body {
 
 .footer-menu .contacts a,
 .contacts a,
-.sms a {
+.sms a,
+.footer-contacts li a {
     display: block;
     font-size: 18rem;
     line-height: 24rem;
