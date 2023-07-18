@@ -46,7 +46,9 @@ body {
     align-items: center;
 }
 
-.social a {
+.social a,
+.contacts a:first-child::before,
+.sms a::before {
     display: inline-block;
     background-image: url(../img/sprite.png);
     transition: 0.3s;
@@ -124,6 +126,47 @@ body {
 
 .contacts a {
     font-weight: bold;
+}
+
+.contacts a,
+.sms a {    
+    position: relative;
+    padding-left: 28px;
+}
+
+.contacts a:first-child::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 17px;
+    height: 17px;
+    background-position: -54px 0;
+    transform: translateY(-50%);
+}
+
+.sms a:first-child::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 17px;
+    height: 13px;
+    background-position: -74px 0px;
+    transform: translateY(-50%);
+}
+
+.sms a:last-child::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 19px;
+    height: 19px;
+    background-position: -91px 0px;
+    transform: translateY(-50%);
 }
 
 .contacts a:hover,
