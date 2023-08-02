@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 
 html {
     font-size: 1px;
@@ -130,7 +143,7 @@ body {
 }
 
 .contacts a,
-.sms a {    
+.sms a {
     position: relative;
     padding-left: 28px;
 }
@@ -154,7 +167,7 @@ body {
     left: 0px;
     width: 17px;
     height: 13px;
-    background-position: -74px 0px;
+    background-position: -73px 0px;
     transform: translateY(-50%);
 }
 
@@ -221,7 +234,7 @@ body {
 }
 
 .banner {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #000 url("../img/nature.jpg") no-repeat center /cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #000 url("../img/nature.jpg") no-repeat center /cover;
     padding: 69px 0;
     margin-bottom: 45px;
 }
@@ -239,7 +252,7 @@ body {
     letter-spacing: 2rem;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 11px;
     color: #fff;
 }
@@ -248,7 +261,6 @@ body {
     font-size: 14rem;
     line-height: 24rem;
     color: #fff;
-    font-family: "Arial";
     margin-bottom: 17px;
 }
 
@@ -276,7 +288,7 @@ body {
 .main-information h1 {
     font-size: 30rem;
     color: #24242b;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
     margin-bottom: 28px;
 }
 
@@ -312,7 +324,7 @@ hr {
     font-size: 24rem;
     line-height: 24rem;
     color: #24242b;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
 
@@ -372,10 +384,12 @@ aside li:hover ul {
 aside>ul>li:hover {
     background-color: #fd8300;
 }
-aside>ul>li:hover>a{
+
+aside>ul>li:hover>a {
     color: #fff;
 }
-aside>ul>li>a{
+
+aside>ul>li>a {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -417,7 +431,7 @@ aside a {
     font-weight: 700;
     padding: 15px 16px;
     background-color: #1f1f56;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
 }
 
 .ais {
