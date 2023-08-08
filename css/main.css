@@ -26,11 +26,13 @@ body {
     font-size: 14rem;
 }
 
-
-.wrapper {
+.df-sb-aic {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
 }
@@ -61,7 +63,9 @@ body {
 
 .social a,
 .contacts a:first-child::before,
-.sms a::before {
+.sms a::before,
+.footer-contacts li:first-child a::before,
+.footer-sms a::before {
     display: inline-block;
     background-image: url(../img/sprite.png);
     transition: 0.3s;
@@ -124,7 +128,7 @@ body {
 
 .contacts a,
 .sms a {
-    margin-bottom: 12px;
+    margin-bottom: 5px;
 }
 
 .footer-menu .contacts a,
@@ -143,12 +147,15 @@ body {
 }
 
 .contacts a,
-.sms a {
+.sms a,
+.footer-contacts a,
+.footer-sms a {
     position: relative;
     padding-left: 28px;
 }
 
-.contacts a:first-child::before {
+.contacts a:first-child::before,
+.footer-contacts li:first-child a::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -159,7 +166,8 @@ body {
     transform: translateY(-50%);
 }
 
-.sms a:first-child::before {
+.sms a:first-child::before,
+.footer-sms li:first-child a::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -171,7 +179,8 @@ body {
     transform: translateY(-50%);
 }
 
-.sms a:last-child::before {
+.sms a:last-child::before,
+.footer-sms li:last-child a::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -282,6 +291,7 @@ body {
 }
 
 .main-information {
+    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -461,7 +471,7 @@ aside a {
 .footer-contacts {
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    row-gap: 5lpx;
 }
 
 .footer-sms a {
@@ -480,4 +490,76 @@ footer p {
     line-height: 18rem;
     color: #9999a6;
     text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 27px;
+}
+
+thead tr {
+    background-color: #1f1f56;
+    color: #fff;
+}
+
+tbody tr {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+}
+
+tbody tr:hover {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+td {
+    padding: 16px;
+}
+
+.price-of-the-cottages {
+    text-align: right;
+}
+
+thead tr td:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+thead tr td:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+.time span {
+    display: block;
+}
+
+.time {
+    font-size: 13rem;
+    line-height: 21rem;
+    color: #666;
+    font-family: "Arial";
+    margin-bottom: 25px;
+}
+
+.rules-of-residence {
+    display: block;
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    margin-bottom: 33px;
+}
+
+hr {
+    border: 1px #e4e4ec solid;
+    margin-bottom: 33px;
+}
+
+.price-wrapper {
+    padding-top: 40px;
+}
+
+.price-header-title {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
