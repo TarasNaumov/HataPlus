@@ -204,7 +204,7 @@ body {
 .sms a:first-child:hover,
 .skype a,
 .button,
-.card h3,
+h3,
 .card-sale a,
 .footer-menu a,
 .footer-sms a {
@@ -492,28 +492,28 @@ footer p {
     text-align: center;
 }
 
-table {
+.price-table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 27px;
 }
 
-thead tr {
+.price-table thead tr {
     background-color: #1f1f56;
     color: #fff;
 }
 
-tbody tr {
+.price-table tbody tr {
     box-shadow: inset 0px -1px 0px #cecedd;
     background-color: #e4e4ec;
 }
 
-tbody tr:hover {
+.price-table tbody tr:hover {
     background-color: #fd8300;
     color: #fff;
 }
 
-td {
+.price-table td {
     padding: 16px;
 }
 
@@ -561,5 +561,178 @@ hr {
 }
 
 .price-header-title {
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-wrapper nav .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-menu {
+    margin-bottom: 35px;
+}
+
+.contacts-menu ul {
+    list-style: none;
+}
+
+.contacts-menu ul p {
+    font-size: 14rem;
+    line-height: 21rem;
+    color: #666;
+    font-family: "Arial";
+}
+
+.contacts-menu ul a {
+    font-size: 18rem;
+    line-height: 24rem;
+    text-decoration: none;
+    color: #25252c;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.our-office li:last-child a {
+    font-size: 16rem;
+    line-height: 24rem;
+    text-decoration: underline;
+    color: #25252c;
+    font-family: "Arial";
+}
+
+.contacts-menu ul li:last-child a:hover {
+    color: #fd8504;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    width: 49%;
+}
+
+.map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    width: 50%;
+}
+
+.form p {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 20px;
+}
+
+.main-info {
+    margin-bottom: 40px;
+}
+
+.main-info form {
+    max-width: 100%;
+}
+
+.main-info form input:not([type="checkbox"]),
+.main-info form textarea {
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+    padding: 16px 15px;
+    width: 100%;
+    font-size: 13rem;
+    line-height: 21rem;
+    color: #9999a6;
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.main-info form textarea {
+    resize: none;
+    max-height: 135px;
+}
+
+.main-info table tr:first-child td {
+    width: 50%;
+}
+
+.form table tr:last-child input[type="checkbox"] {
+    display: none;
+}
+
+.form table tr:last-child label {
+    position: relative;
+    font-size: 13rem;
+    line-height: 21rem;
+    color: #666;
+    font-family: "Arial";
+}
+
+.form table tr:last-child label:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+}
+
+.form table tr:last-child input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 23%;
+    left: -22px;
+    transform: translateY(-50%);
+    transform: rotate(-45deg);
+    width: 9px;
+    height: 6px;
+    border: 2px solid #1f1f56;
+    border-top: none;
+    border-right: none;
+}
+
+.form button[type="submit"] {
+    transition: 0.3s;
+    position: relative;
+    padding: 12px 30px;
+    border-radius: 21px;
+    background: transparent;
+    border: 1px solid #fd8300;
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.form button[type="submit"]::before {
+    content: '';
+    transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 21px;
+    background: #fd8300;
+    z-index: -1;
+}
+
+.form button[type="submit"]:hover::before {
+    width: 100%;
+}
+
+.form button[type="submit"]:hover {
+    color: #fff;
 }
