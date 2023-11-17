@@ -480,6 +480,10 @@ aside a {
     color: #25252c;
 }
 
+.price-header-title {
+    margin-bottom: 40px;
+}
+
 .bottom-footer {
     background-color: #dcdce6;
     padding: 11px 0;
@@ -570,6 +574,10 @@ hr {
     align-items: center;
 }
 
+.contacts-wrapper h1 {
+    margin-bottom: 26px;
+}
+
 .contacts-menu {
     margin-bottom: 35px;
 }
@@ -613,10 +621,11 @@ hr {
 
 .map {
     width: 49%;
+    overflow: hidden;
 }
 
 .map iframe {
-    height: 100%;
+    margin-top: -70px;
     width: 100%;
 }
 
